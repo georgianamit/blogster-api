@@ -50,7 +50,7 @@ userRouter.post('/signin', (req, res) => {
       if (isMatch) {
         const payload = {
           id: user.id,
-          user_name: user.user_name,
+          username: user.username,
         }
         jwt.sign(payload, SECRET, { expiresIn: 3600 }, (err, token) => {
           if (err) {
