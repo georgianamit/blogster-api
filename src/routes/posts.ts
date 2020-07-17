@@ -20,7 +20,7 @@ postRouter.get(
   }
 )
 postRouter.get('/:id', (req, res) => {
-  Post.find({ _id: req.params.id })
+  Post.findOne({ _id: req.params.id })
     .then((post) => res.status(200).json(post))
     .catch((err) => res.status(400).json({ id: 'Error fetching post by id' }))
 })

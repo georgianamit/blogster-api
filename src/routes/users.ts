@@ -35,7 +35,7 @@ userRouter.post('/signup', (req, res) => {
   })
 })
 
-userRouter.post('/signin', (req, res) => {
+userRouter.post('/login', (req, res) => {
   const { errors, isValid } = validateSignIn(req.body)
   if (!isValid) {
     return res.status(400).json(errors)
