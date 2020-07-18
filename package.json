@@ -4,11 +4,14 @@
   "description": "A Single Page Blogging Platform.",
   "main": "index.js",
   "scripts": {
-    "start:dev": "export NODE_ENV=development && webpack --colors --progress --config scripts/webpack/webpack.config.js",
+    "start": "export NODE_ENV=development && webpack --colors --progress --config scripts/webpack/webpack.config.js",
     "build": "export NODE_ENV=production && webpack --config scripts/webpack/webpack.config.js"
   },
-  "author": "spider <georgianamitrawat@gmail.com> (https://github.com/georgianamit)",
+  "author": "spider <georgianamitrawat@gmail.com> (https://georgianamit.github.io)",
   "license": "ISC",
+  "engines": {
+    "node": "12.16.3"
+  },
   "dependencies": {
     "@types/mongoose": "^5.7.21",
     "bcryptjs": "^2.4.3",
